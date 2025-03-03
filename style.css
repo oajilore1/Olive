@@ -1,0 +1,50 @@
+body {
+    background-color: #f3e5f5; /* Light purple */
+    color: #4a148c; /* Dark purple text */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #6a1b9a !important; /* Dark purple navbar */
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #6a1b9a;
+}
+
+h1, h2 {
+    color: #4a148c;
+}
+
+.btn-dark {
+    background-color: #6a1b9a !important;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #4a148c !important;
+}
+
+.card {
+    border: 1px solid #6a1b9a;
+    background-color: #f8bbd0; /* Light pink for contrast */
+    color: #4a148c;
+}
+
+.github-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+}
