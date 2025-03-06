@@ -1,70 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olive Ajilore - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| Coding</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
     <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
+      <div class="navbar">
+        <div class="logo"><a href="#">My Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
-  </header>
-
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Hello, it's me, Olive Ajilore!</h1>
-      <img src="your-photo.jpg" alt="Olive Ajilore" class="hero-img">
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate individual focused on pursuing a career in Information Science and Technology. I have a strong interest in law and technology, and I'm committed to making an impact.</p>
-  </section>
-
-  <section id="services" class="services">
-    <h2>My Services</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Consulting in Technology & Law</li>
-      <li>Community Engagement & Leadership</li>
-    </ul>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-    <div class="skill-list">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Java</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Python</div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Olive Ajilore. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Olive Ajilore</div>
+          <div class="text-three">Aspiring Software Engineer and Data Analyst</div>
+          <div class="text-four">From Northern Virginia</div>
+        </div>
+        <div class="button">
+          <button>Hire Me</button>
+        </div>
+      </div>
+    </section>
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="images/about.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Designing Is My Passion</div>
+            <p>
+              I have fallen in love with design since I was a child. I have always been fascinated by the idea of creating something that is visually appealing and functional at the same time. I have been able to iplement this idea into software developing. HTML, CSS, and JavaScript were the first coding languages I learned. I am continously learning new languages and frameworks to improve my skills.
+            </p>
+            <div class="button">
+              <button>Download my resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">My Skills go beyond the technical aspect</div>
+            <p>I believe I am a well rounded person. Here are some key soft skills that highlight my experiences being an Information Science and Technology major who has leadership experiences and participates in non-profit work </p>
+            <div class="experience">
+              <div class="num"></div>
+              <div class="exp">
+                <br />
+                
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">Problem Solving & Critical Thinking</div>
+              <div class="per">25%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Project and Time Management</div>
+              <div class="per">25%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Technology and Innovation Mindset</div>
+              <div class="per">25%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Collaboration & Networking</div>
+              <div class="per">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Web Development</div>
+            <p>I am able to efficently use HTML, CSS, and JavaScript to build any type of wesbite</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Java</div>
+            <p>I use Java to develop scalable and secure applications that enhance the functionality of my website and services. From backend development to interactive features, Java enables me to create efficient, reliable, and user-friendly solutions tailored to my audience's needs.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">SQL</div>
+            <p>I have used MySql to build a databse for rental service platform. Arraging employee information, customer details, facilities, and maintenance history. </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Python</div>
+            <p>I utilize Python to develop interactive features, automate processes, and enhance the functionality of my website, ensuring a seamless experience for visitors. From integrating dynamic content to optimizing backend operations, my coding expertise helps showcase the missions of Project Hope in Africa and the services we provide with clarity and efficiency</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">C++</div>
+            <p>I leverage C++ to build efficient, high-performance applications that enhance the functionality of my website and services. Whether optimizing backend processes, developing interactive features, or ensuring seamless execution, my expertise in C++ helps create a reliable and responsive user experience.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">Apps Devlopment</div>
+            <p>Transforming ideas into powerful apps! I specialize in developing intuitive, high-performance applications tailored to meet diverse needs. Whether it's mobile or web-based, my expertise in coding and user experience design ensures functional, visually appealing, and scalable solutions that bring your vision to life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">For any futher information about me</div>
+          <p>I would love to connect :)</p>
+          <div class="button">
+            <button>Connect </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">Olive Ajilore</a> | &#169; 2025 All Rights Reserved</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
