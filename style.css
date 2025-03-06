@@ -1,50 +1,140 @@
-body {
-    background-color: #f3e5f5; /* Light purple */
-    color: #4a148c; /* Dark purple text */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-}
-
-.navbar {
-    background-color: #6a1b9a !important; /* Dark purple navbar */
-}
-
-.navbar-brand {
-    color: white !important;
-    font-weight: bold;
-}
-
-.profile-img {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  header {
+    background-color: #6A4C9C;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: #9B74D4;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .hero img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 3px solid #6a1b9a;
-}
-
-h1, h2 {
-    color: #4a148c;
-}
-
-.btn-dark {
-    background-color: #6a1b9a !important;
-    border: none;
-}
-
-.btn-dark:hover {
-    background-color: #4a148c !important;
-}
-
-.card {
-    border: 1px solid #6a1b9a;
-    background-color: #f8bbd0; /* Light pink for contrast */
-    color: #4a148c;
-}
-
-.github-card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-footer {
-    background-color: #6a1b9a;
+    margin-top: 20px;
+  }
+  
+  section {
+    padding: 50px 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #6A4C9C;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill {
+    background-color: #9B74D4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact form button {
+    background-color: #6A4C9C;
     color: white;
     padding: 10px;
-}
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact form button:hover {
+    background-color: #9B74D4;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #6A4C9C;
+    color: white;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .skill {
+      font-size: 1rem;
+    }
+  
+    .services ul li {
+      font-size: 1rem;
+    }
+  }
+  
